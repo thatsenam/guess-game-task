@@ -2,12 +2,18 @@
 
 ## Installation Guide
 
+- Clone your project
+- Go to the folder application using cd command on your cmd or terminal
+- Run `composer install` on your cmd or terminal
+- Copy .env.example file to `.env` on the root folder. You can type copy .env.example .env if using command prompt Windows or cp .env.example .env if using terminal, Ubuntu
+- Open your .env file and change the database name (DB_DATABASE) to whatever you have, username (DB_USERNAME) and password (DB_PASSWORD) field correspond to your configuration.
+- By default, the username is root and you can leave the password field empty. (This is for Xampp)
+- By default, the username is root and password is also root. (This is for Lamp)
+- Run `php artisan key:generate`
+- Run `php artisan migrate`
+- Run `php artisan serve`
+- Go to `localhost:8000`
+## Start the game in CLI Mode
+- Run `php artisan guess_game`
 
-
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
