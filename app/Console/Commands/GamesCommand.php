@@ -55,6 +55,7 @@ class GamesCommand extends Command
                 $computer_answer = "Bingo";
                 $continue = false;
             }
+            $this->info($computer_answer);
             GuessGame::create(['game_id' => $game_id, 'move_number' => $move_number, 'guess_value' => $guess_value,
                 'generated_value' => $generated_value, 'computer_answer' => $computer_answer]);
             $move_number++;
