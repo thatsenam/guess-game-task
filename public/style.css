@@ -1,0 +1,49 @@
+.wrapper {
+    background: whitesmoke;
+    height: 100vh;
+    width: 100%;
+}
+
+.main-content {
+    width: 80%;
+    height: 100vh;
+    margin: auto auto;
+}
+
+.box {
+    min-height: 500px;
+}
+
+.bg {
+    width: 100%;
+    height: 100%;
+}
+
+.playNowButton {
+    cursor: pointer;
+}
+
+.playground {
+    display: none;
+}
+
+.card-body {
+    background: aliceblue;
+}
+
+#guessMessage {
+    font-weight: bolder;
+    font-size: 20px;
+
+}
+
+.won {
+    display: none;
+    text-align: center;
+}
+
+.playAgain {
+    text-align: center;
+    cursor: pointer;
+    margin-top: 20px;
+}
