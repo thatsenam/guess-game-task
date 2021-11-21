@@ -32,7 +32,7 @@
                                 <option value="" selected>--Guess Value--</option>
 
                                 @foreach($guess_values as $guess_value)
-                                    <option value="{{ $guess_value }}"> {{ $guess_value }} </option>
+                                    <option value="{{ $guess_value }}"   @if($guess_value == $filtered_guess_value ) selected @endif> {{ $guess_value }} </option>
                                 @endforeach
                             </select>
                         </th>
@@ -40,15 +40,15 @@
                             <select class="form-control" name="generated_value" id="generated_value">
                                 <option value="" selected>--Generated Value--</option>
                                 @foreach($generated_values as $generated_value)
-                                    <option value="{{ $generated_value }}"> {{ $generated_value }} </option>
+                                    <option value="{{ $generated_value }}"   @if($generated_value == $filtered_generated_value ) selected @endif> {{ $generated_value }} </option>
                                 @endforeach
                             </select>
                         </th>
-                        <th><select class="form-control" name="generated_value" id="computer_answer">
+                        <th><select class="form-control" name="computer_answer" id="computer_answer">
                                 <option value="" selected>--Computer Answer--</option>
 
                                 @foreach($computer_answers as $computer_answer)
-                                    <option value="{{ $computer_answer }}"> {{ $computer_answer }} </option>
+                                    <option value="{{ $computer_answer }}"  @if($computer_answer == $filtered_computer_answer ) selected @endif> {{ $computer_answer }} </option>
                                 @endforeach
                             </select></th>
                     </tr>
